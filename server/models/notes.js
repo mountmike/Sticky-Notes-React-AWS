@@ -25,6 +25,9 @@ class Note {
         let sql = `insert into notes (content, content_html, background_colour) values ($1, $2, $3) returning *;`
         return db.query(sql, [newNote.content, md.render(newNote.content), backgroundColours[Math.floor(Math.random()*5)]])
         .then(res => res.rows[0])
+        .catch((error) => {
+            console.log(error);
+        })
     }
 
     static update(id, newNote) {
