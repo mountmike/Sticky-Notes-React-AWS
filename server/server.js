@@ -10,7 +10,7 @@ const Note = require("./models/notes.js")
 const AppError = require("./lib/app_error")
 
 
-app.use(express.static("build"))
+app.use(express.static("public"))
 app.use(express.json())
 
 app.get("/", (req, res) => {
