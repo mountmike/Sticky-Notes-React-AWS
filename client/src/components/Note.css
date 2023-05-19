@@ -1,0 +1,57 @@
+.note {
+    background: linear-gradient(to bottom left, transparent 50%, rgb(250, 220, 20) 50%),
+      linear-gradient(to right, #ffed7d 99.9%, transparent 99.9%),
+      linear-gradient(to right, #ffed7d 99.9%, transparent 99.9%);
+    background-size: 16px 16px, 100% 100%, 100% 100%;
+    background-position: 100% 0%, -16px 0%, 100% 16px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: all 0.3s ease-in;
+    padding: 10px;
+    height: 12rem;
+    width: 12rem;
+  }
+  
+  /* const colors = ['bcdfc9', 'f6c2d9' ,'fff69b' ,'a1c8e9', 'e4dae2'] */
+  
+  
+  .note textarea {
+    background-color: inherit;
+    height: 6rem;
+    resize: none;
+    width: 100%;
+    outline: none;
+    border: 1px dashed #2c006a;
+    display: block;
+    margin-top: 1rem;
+  }
+  
+  .note-wrapper {
+    position: relative;
+  }
+  
+  .note-wrapper footer {
+    margin-top: 4px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .note-wrapper .delete-btn {
+    position: absolute;
+    top: 0px;
+    right: 10%;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+
+.delete-btn:hover  {
+  background: linear-gradient(to bottom left, transparent 50%, rgb(250, 220, 20) 50%),
+  linear-gradient(to right, linen 99.9%, transparent 99.9%),
+  linear-gradient(to right, #ffed7d 99.9%, transparent 99.9%);
+  width: 48px;
+  height: 48px;
+  transition: .2s ease-in;
+
+  }
